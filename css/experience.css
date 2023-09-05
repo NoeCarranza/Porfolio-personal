@@ -1,0 +1,185 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root {
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+p{
+    margin: 0;
+}
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+
+/*Experiencia*/
+
+.experience__section__title{
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+}
+
+.experience__img{
+    width: 400px;
+    margin: 3%;
+}
+
+.experience__info{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 5%;
+    text-align: center;
+}
+.experience__text{
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-top: 10%;
+    text-align: center;
+    padding: 5px;
+}
+.experience__text2{
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    margin: 10px 10px 20px 10px;
+    text-align: center;
+}
+
+.experience__repo{
+    border-radius: 15px;
+    background-color:rgb(251, 155, 230);
+    color: #000;
+    font-family: 'Raleway';
+    font-weight: bolder;
+    font-size: 1rem;
+    margin: 50px 0 0px 0;
+    padding: 20px 50px 20px 50px;
+}
+
+.experience__description{
+    padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+    .experience__info{
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .experience__box{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .experience__img{
+        width: 95%;
+        margin: 2.5%;
+    }
+    .experience__section__title{
+        padding-top: 60px;
+    }
+    .experience__text{
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
+    }
+    .experience__text2{
+        margin: 10px 10px 40px 10px;
+        padding: 0;
+
+    }
+    
+    .experience__repo{
+        padding: 25px 60px 25px 60px;
+    }
+    
+    .experience__info{
+        padding: 0;
+        margin: 0;
+    }
+    .experience__info{
+        display: flex;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    
+    .experiencie__box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .experiencie__box2{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin: 30px;
+    }
+    .experience__section__title{
+        font-size: 2rem;
+        padding: 30px;
+    }
+    .experience__img{
+        width: 50%;
+        padding: 0;
+        margin:0;
+    }
+    .experience__title{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    } 
+    .experience__info{
+        display: flex;
+        flex-direction: column;
+        max-height: 300px;
+        max-width: 350px;
+    }
+    .experience__repo{
+        padding: 30px 70px 30px 70px;
+    }
+
+}

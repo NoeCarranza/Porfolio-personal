@@ -1,0 +1,64 @@
+.about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.about__title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    padding: 10%;
+}
+
+.about__paragraph {
+    padding: 1%;
+    margin: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.about__firma {
+    width: 20%;
+    padding: 10px;
+}
+
+
+
+@media (min-width: 768px) {
+
+    .about__container {
+        align-items: flex-start;
+    }
+    .about__title{
+        padding: 0;
+        margin: 20px;
+        text-align: left;
+    }
+    .about__paragraph{
+        text-align: left;
+        padding: 10px;
+    }
+    .about__firma {
+        width: 10%;
+        padding: 5px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .about__title {
+        margin-left: 40px;
+    }
+
+    .about__paragraph {
+        text-align: justify;
+        width: 80%;
+        margin-left: 30px;
+    }
+    .about__firma {
+        width: 20%;
+        align-self:last baseline;
+    }    
+}

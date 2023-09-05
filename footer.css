@@ -1,0 +1,20 @@
+.footer__rodape{
+    text-align: center;
+}
+.footer__img{
+    width:50px;
+}
+@media (min-width: 768px) {
+    .footer__rodape{
+        font-size: 1rem;
+    }
+    .footer__img{
+        width: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer__img{
+        width: 60px;
+    }
+}

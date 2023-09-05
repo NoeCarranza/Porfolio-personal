@@ -1,0 +1,45 @@
+
+.academic__title{
+    padding: 60px;
+    font-size: 2rem;
+    margin: 0%;
+    text-align: center;
+}
+
+.academic__courses{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+.academic__courses__box{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+}
+
+.academic__courses__item__title{
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+
+
+    .academic__courses__box{
+        background-color:#E6CED6;
+        border-radius: 25px;
+        width: 40%;
+    }
+
+}
+
+/*Mobile*/
+@media (min-width: 1440px) {
+
+
+
+}
