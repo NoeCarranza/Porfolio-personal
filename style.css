@@ -1,0 +1,188 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root {
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+p{
+    margin: 0;
+}
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e6ced69a;
+    width: 100%;
+
+}
+
+
+.title {
+    background-color: #d1d1d1;
+    margin: 0%;
+}
+.skills {
+    background: #FDF4F7;
+    padding: 16px 0 40px 0;
+}
+.about {
+    background-color: #E6CED6;
+
+}
+.hobbies{
+    background-color: #E6CED6;
+    padding-bottom: 40px;
+}
+
+.academic{
+    background-color: #d1d1d1;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+
+.experience{
+    background-color:#E6CED6;
+}
+
+
+.formcontato{
+    background-color: #E6CED6;
+}
+
+
+.footer{
+    background-color:rgb(251, 155, 230);
+    padding-top: 40px;
+}
+
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+
+.title{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    padding-bottom: 40px;
+}
+.skills {
+    background: #FDF4F7;
+    padding-bottom: 40px;
+}
+
+.about {
+    .skills {
+    padding-bottom: 40px;
+}
+
+.hobbies {
+    padding-bottom: 40px;
+}
+
+.academic{
+    padding-bottom: 40px;
+}
+
+.footer{
+    padding: 0;
+}
+}
+}
+/*Mobile*/
+@media (min-width: 1024px) {
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        background-color: #e6ced69a;
+        gap: 20 px;
+    }
+
+    .title {
+        padding: 30px;
+        height: 400px;
+        align-items: center;
+        margin: 0;
+    }
+    .about {
+        display: flex;
+        align-items: center;
+        padding: 60px;
+        height: 700px;
+        margin: 0;
+    
+    }
+    .skills {
+        display: flex;
+        padding: 20px;
+        height: 750px;
+        align-items: stretch;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hobbies {
+        display: flex;
+        padding: 20px;
+        height: 800px;
+        align-items: stretch;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .academic{
+        height: 780px;
+        padding-bottom: 40px;
+    }
+    .experience{
+        padding: 20px;
+    }
+    .formcontato{
+        display: flex;
+        justify-content: center;
+    }
+}
