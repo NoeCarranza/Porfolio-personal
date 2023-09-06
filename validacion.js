@@ -1,3 +1,4 @@
+
 function hideErrorMessages() {
     var errorElements = document.querySelectorAll('.formulario-error');
     errorElements.forEach(function (element) {
@@ -5,15 +6,13 @@ function hideErrorMessages() {
     });
 }
 
-// Function to display a success message
 function displaySuccessMessage() {
     alert('Message sent successfully!');
 }
 
-// Call the function to hide error messages on page load
 window.addEventListener('load', hideErrorMessages);
 
-// Add the form validation logic here (as shown in the previous response)
+
 document.getElementById('formulario').addEventListener('submit', function (event) {
     var nombreInput = document.getElementById('nombre');
     var emailInput = document.getElementById('mail');
@@ -25,13 +24,9 @@ document.getElementById('formulario').addEventListener('submit', function (event
     var asuntoError = document.getElementById('asunto-error');
     var mensajeError = document.getElementById('mensaje-error');
 
-    var nombrePattern = /^[a-zA-ZÀ-ÿ\s]{1,16}$/;
-    var emailPattern = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-    var asuntoPattern = /^[a-zA-ZÀ-ÿ\s]{1,16}$/;
-
     var isValid = true;
 
-    if (!nombrePattern.test(nombreInput.value)) {
+    if (nombreInput.value.trim() === '') {
         nombreInput.classList.add('error');
         nombreError.style.display = 'block';
         isValid = false;
@@ -40,7 +35,7 @@ document.getElementById('formulario').addEventListener('submit', function (event
         nombreError.style.display = 'none';
     }
 
-    if (!emailPattern.test(emailInput.value)) {
+    if (emailInput.value.trim() === '') {
         emailInput.classList.add('error');
         emailError.style.display = 'block';
         isValid = false;
@@ -49,7 +44,7 @@ document.getElementById('formulario').addEventListener('submit', function (event
         emailError.style.display = 'none';
     }
 
-    if (!asuntoPattern.test(asuntoInput.value)) {
+    if (asuntoInput.value.trim() === '') {
         asuntoInput.classList.add('error');
         asuntoError.style.display = 'block';
         isValid = false;
@@ -68,7 +63,7 @@ document.getElementById('formulario').addEventListener('submit', function (event
     }
 
     if (isValid) {
-        // If all fields are valid, display a success message
+
         displaySuccessMessage();
     } else {
         event.preventDefault();
