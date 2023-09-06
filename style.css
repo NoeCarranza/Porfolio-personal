@@ -59,40 +59,48 @@ https://en.bem.info/methodology/quick-start/*/
 .title {
     background-color: #d1d1d1;
     margin: 0%;
+    width: 100%;
 }
 .skills {
     background: #FDF4F7;
     padding: 16px 0 40px 0;
+    width: 100%;
 }
 .about {
     background-color: #E6CED6;
+    width: 100%;
 
 }
 .hobbies{
     background-color: #E6CED6;
     padding-bottom: 40px;
+    width: 100%;
 }
 
 .academic{
     background-color: #d1d1d1;
     margin: 0;
     padding-bottom: 40px;
+    width: 100%;
 }
 
 
 .experience{
     background-color:#E6CED6;
+    width: 100%;
 }
 
 
 .formcontato{
     background-color: #E6CED6;
+    width: 100%;
 }
 
 
 .footer{
     background-color:rgb(251, 155, 230);
     padding-top: 40px;
+    width: 100%;
 }
 
 
@@ -111,27 +119,33 @@ Utiliza las referencias de los breakpoints @media abajo */
     align-items: stretch;
     flex-direction: row-reverse;
     padding-bottom: 40px;
+    width: 100%;
 }
 .skills {
     background: #FDF4F7;
     padding-bottom: 40px;
+    width: 100%;
 }
 
 .about {
     .skills {
     padding-bottom: 40px;
+    width: 100%;
 }
 
 .hobbies {
     padding-bottom: 40px;
+    width: 100%;
 }
 
 .academic{
     padding-bottom: 40px;
+    width: 100%;
 }
 
 .footer{
     padding: 0;
+    width: 100%;
 }
 }
 }
@@ -142,6 +156,7 @@ Utiliza las referencias de los breakpoints @media abajo */
         justify-content: space-between;
         background-color: #e6ced69a;
         gap: 20 px;
+        width: 100%;
     }
 
     .title {
@@ -149,6 +164,7 @@ Utiliza las referencias de los breakpoints @media abajo */
         height: 400px;
         align-items: center;
         margin: 0;
+        width: 100%;
     }
     .about {
         display: flex;
@@ -156,6 +172,7 @@ Utiliza las referencias de los breakpoints @media abajo */
         padding: 60px;
         height: 700px;
         margin: 0;
+        width: 100%;
     
     }
     .skills {
@@ -165,6 +182,7 @@ Utiliza las referencias de los breakpoints @media abajo */
         align-items: stretch;
         flex-direction: column;
         justify-content: center;
+        width: 100%;
     }
     .hobbies {
         display: flex;
@@ -173,16 +191,20 @@ Utiliza las referencias de los breakpoints @media abajo */
         align-items: stretch;
         flex-direction: column;
         justify-content: center;
+        width: 100%;
     }
     .academic{
         height: 780px;
         padding-bottom: 40px;
+        width: 100%;
     }
     .experience{
         padding: 20px;
+        width: 100%;
     }
     .formcontato{
         display: flex;
         justify-content: center;
+        width: 100%;
     }
 }
